@@ -1,0 +1,47 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="../Style/mainStyle.css" />
+  <link rel="stylesheet" href="../Style/buttons.css" />
+  <link rel="stylesheet" href="../Style/body.css" />
+  <link rel="stylesheet" href="../Style/menu.css" />
+  <title>Lista</title>
+</head>
+<body data-page="list">
+    
+    <div class="page-layout">
+        <div class="top-left-container">
+            <div class="menu">
+                <a href="../index.html">
+                    <button>Volver al Indice</button>
+                </a>
+                <a href="modificar.html">
+                    <button>Modificar Stock</button>
+                </a>
+            </div>
+        </div>
+        
+        <div class="center-container">
+            <h1 class="h1">Lista de Stock</h1>
+            <div class="table-container">
+                <table class="stock-table">
+                    <thead>
+                        <tr>
+                        <th>Nombre</th>
+                        <th>Categoria</th>
+                        <th>Cantidad Disponible</th>
+                        <th>Unidad</th>
+                        <th>Ubicacion</th>
+                        </tr>
+                    </thead>
+                <tbody id="stock-table-body"></tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <script src="../Script/lista.js"></script>
+</body>
+</html>

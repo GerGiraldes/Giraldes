@@ -1,0 +1,77 @@
+.menu {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 15px;
+}
+
+/* =========================================================
+   TABLES
+========================================================= */
+
+.table-container {
+
+    width: 100%;
+
+    overflow-x: auto;
+
+    --text:var(--text-dark);
+
+}
+
+
+.stock-table {
+
+    width: 100%;
+
+    border-collapse: collapse;
+
+    background-color: #f1f3f7;
+
+
+}
+
+
+.stock-table thead {
+
+    background-color: var(--primary);
+
+    align-items: center;
+
+}
+
+
+.stock-table th {
+    
+    padding: 14px;
+
+    text-align: left;
+
+    color: rgb(255, 255, 255);
+}
+
+
+.stock-table td {
+
+    padding: 14px;
+
+    border-bottom: 1px solid var(--border);
+
+    text-align: center;
+
+    color: var(--text);
+}
+
+
+.stock-table tbody tr {
+
+    transition: var(--transition);
+}
+
+
+.stock-table tbody tr:hover {
+
+    background-color: rgba(255,255,255,0.03);
+}

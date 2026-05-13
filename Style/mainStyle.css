@@ -1,0 +1,98 @@
+:root {
+
+    /* COLORS */
+
+    --bg-color: #1e1f26;
+    --card-color: #2a2d37;
+
+    --primary: #4f8cff;
+    --primary-hover: #3b73d9;
+
+    --secondary: #3a3f4b;
+
+    --text: #f5f7fa;
+    --text-light: #9aa3b2;
+    --text-dark: #000000;
+
+    --border: rgba(255,255,255,0.08);
+
+    --shadow: 0 6px 18px rgba(0,0,0,0.35);
+
+    /* GENERAL */
+
+    --radius: 16px;
+
+    --transition: 0.2s ease;
+}
+
+
+/* =========================================================
+   RESET
+========================================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+input,
+select {
+
+    width: 100%;
+
+    padding: 12px;
+
+    border-radius: 10px;
+
+    border: 1px solid var(--border);
+
+    background-color: #23252d;
+
+    color: var(--text);
+
+    outline: none;
+
+    margin-top: 8px;
+}
+
+
+input:focus,
+select:focus {
+
+    border-color: var(--primary);
+}
+
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+@media (max-width: 900px) {
+
+    .page-layout {
+
+        grid-template-columns: 1fr;
+    }
+
+    .top-left-container,
+    .top-right-container,
+    .center-container {
+
+        grid-column: 1;
+    }
+
+    .top-left-container {
+
+        grid-row: 1;
+    }
+
+    .top-right-container {
+
+        grid-row: 2;
+    }
+
+    .center-container {
+
+        grid-row: 3;
+    }
+}

@@ -1,0 +1,79 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="../Style/mainStyle.css" />
+  <link rel="stylesheet" href="../Style/buttons.css" />
+  <link rel="stylesheet" href="../Style/body.css" />
+  <link rel="stylesheet" href="../Style/menu.css" />
+  <title>Modificar Stock</title>
+</head>
+<body data-page="modify">
+  <div class="page-layout">
+    <div class="top-left-container">
+      <div class="menu">
+        <a href="../index.html">
+          <button>Volver al Indice</button>
+        </a>
+        <a href="lista.html">
+          <button>Ver Lista</button>
+        </a>
+      </div>
+    </div>
+
+    <div class="center-container">
+      <h1 class="h1">Modificar Stock</h1>
+
+      <section class="form-section">
+        <h2>Agregar producto</h2>
+        <form id="add-form">
+          <div class="form-row">
+            <label for="item-name">Nombre</label>
+            <input id="item-name" name="name" type="text" placeholder="Ej: Queso" />
+          </div>
+          <div class="form-row">
+            <label for="item-category">Categoria</label>
+            <input id="item-category" name="category" type="text" placeholder="Ej: Lacteos" />
+          </div>
+          <div class="form-row">
+            <label for="item-quantity">Cantidad</label>
+            <input id="item-quantity" name="quantity" type="number" min="0" placeholder="Ej: 2" />
+          </div>
+          <div class="form-row">
+            <label for="item-unit">Unidad</label>
+            <input id="item-unit" name="unit" type="text" placeholder="Ej: Kilos" />
+          </div>
+          <div class="form-row">
+            <label for="item-location">Ubicacion</label>
+            <input id="item-location" name="location" type="text" placeholder="Ej: Heladera" />
+          </div>
+          <div class="form-actions">
+            <button type="submit">Agregar producto</button>
+          </div>
+          <p id="form-message" class="form-message"></p>
+        </form>
+      </section>
+
+      <section class="table-container">
+        <h1 class ="h1" style="color: white;">Stock actual</h1>
+        <table class="stock-table">
+          <thead>
+            <tr>
+              <th>Nombre</th>
+              <th>Categoria</th>
+              <th>Cantidad</th>
+              <th>Unidad</th>
+              <th>Ubicacion</th>
+              <th>Accion</th>
+            </tr>
+          </thead>
+          <tbody id="modify-table-body"></tbody>
+        </table>
+      </section>
+    </div>
+  </div>
+
+  <script src="../Script/lista.js"></script>
+</body>
+</html>
